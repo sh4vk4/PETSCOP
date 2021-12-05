@@ -1,0 +1,64 @@
+USE `petscop`;
+
+CREATE TABLE IF NOT EXISTS `users` (
+`userID` int(11) NOT NULL AUTO_INCREMENT,
+`first_name` varchar(20) NOT NULL,
+`last_name` varchar(30) NOT NULL,
+`email` varchar(50) NOT NULL,
+`passw` varchar(50) NOT NULL,
+PRIMARY KEY (`userID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+CREATE TABLE IF NOT EXISTS `feedback`
+(
+	`feedbackID` int(11) NOT NULL AUTO_INCREMENT,
+	`nickname` varchar(20) NOT NULL,
+	`email` varchar(50) NOT NULL,
+    `msg` text NOT NULL,
+PRIMARY KEY (`feedbackID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+CREATE TABLE IF NOT EXISTS `popular_products`(
+    `productID` INT AUTO_INCREMENT,
+    `pic_path` varchar(255) NOT NULL,
+    `name` varchar(50) NOT NULL,
+    `desc` varchar(255) NOT NULL,
+    `cost` int(6) NOT NULL,
+PRIMARY KEY (`productID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+CREATE TABLE IF NOT EXISTS `food`(
+    `productID` INT AUTO_INCREMENT,
+    `pic_path` varchar(255) NOT NULL,
+    `name` varchar(50) NOT NULL,
+    `desc` varchar(255) NOT NULL,
+    `cost` int(6) NOT NULL,
+PRIMARY KEY (`productID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+CREATE TABLE IF NOT EXISTS `toys`(
+    `productID` INT AUTO_INCREMENT,
+    `pic_path` varchar(255) NOT NULL,
+    `name` varchar(50) NOT NULL,
+    `desc` varchar(255) NOT NULL,
+    `cost` int(6) NOT NULL,
+PRIMARY KEY (`productID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+CREATE TABLE IF NOT EXISTS `accessory`(
+    `productID` INT AUTO_INCREMENT,
+    `pic_path` varchar(255) NOT NULL,
+    `name` varchar(50) NOT NULL,
+    `desc` varchar(255) NOT NULL,
+    `cost` int(6) NOT NULL,
+PRIMARY KEY (`productID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+CREATE TABLE IF NOT EXISTS `healthcare`(
+    `productID` INT AUTO_INCREMENT,
+    `pic_path` varchar(255) NOT NULL,
+    `name` varchar(50) NOT NULL,
+    `desc` varchar(255) NOT NULL,
+    `cost` int(6) NOT NULL,
+PRIMARY KEY (`productID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;

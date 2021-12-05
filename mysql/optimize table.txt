@@ -1,0 +1,9 @@
+USE `petscop`;
+
+OPTIMIZE TABLE `popular_products`;
+OPTIMIZE TABLE `feedback`;
+OPTIMIZE TABLE `users`;
+OPTIMIZE TABLE `food`;
+OPTIMIZE TABLE `healthcare`;
+OPTIMIZE TABLE `toys`;
+OPTIMIZE TABLE `accessory`;

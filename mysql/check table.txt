@@ -1,0 +1,9 @@
+USE `petscop`;
+
+CHECK TABLE `popular_products`;
+CHECK TABLE `feedback` QUICK;
+CHECK TABLE `users` QUICK;
+CHECK TABLE `food` QUICK;
+CHECK TABLE `healthcare` QUICK;
+CHECK TABLE `toys` QUICK;
+CHECK TABLE `accessory`QUICK;

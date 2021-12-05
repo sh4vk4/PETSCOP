@@ -1,0 +1,9 @@
+USE `petscop`;
+
+REPAIR TABLE `popular_products` QUICK;
+REPAIR TABLE `feedback` QUICK;
+REPAIR TABLE `users` QUICK;
+REPAIR TABLE `food` QUICK;
+REPAIR TABLE `healthcare` QUICK;
+REPAIR TABLE `toys` QUICK;
+REPAIR TABLE `accessory`QUICK;
